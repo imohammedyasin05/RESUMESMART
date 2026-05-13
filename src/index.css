@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-[#fdfdfd] text-[#1a1a1a] font-sans antialiased;
+  }
+}
+
+.quill {
+  @apply h-full flex flex-col font-sans;
+}
+
+.ql-container {
+  @apply flex-1 text-base border-none! font-sans!;
+}
+
+.ql-toolbar {
+  @apply border-none! border-b border-black! bg-[#f8f8f8];
+}
+
+.neo-shadow {
+  @apply shadow-[4px_4px_0px_0px_rgba(0,0,0,1)];
+}
+
+.neo-shadow-hover {
+  @apply hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all;
+}
+
+.btn-neo-primary {
+  @apply bg-black text-white font-black text-[11px] uppercase tracking-widest hover:bg-zinc-800 transition-colors border border-black;
+}
+
+.btn-neo-secondary {
+  @apply bg-white text-black font-black text-[11px] uppercase tracking-widest hover:bg-gray-100 transition-colors border border-black;
+}
