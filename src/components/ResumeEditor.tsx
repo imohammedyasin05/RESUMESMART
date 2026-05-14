@@ -69,7 +69,7 @@ export function ResumeEditor({ content, setContent, isLoading }: ResumeEditorPro
           <div className="absolute inset-0 flex items-center justify-center bg-white/80 z-20">
             <div className="flex flex-col items-center gap-3">
               <div className="h-10 w-10 border-4 border-black border-t-blue-600 animate-spin"></div>
-              <p className="text-[10px] font-black uppercase tracking-[0.2em] text-black">Polishing Resume...</p>
+              <p className="text-[11px] font-black uppercase tracking-[0.2em] text-black">Polishing Resume...</p>
             </div>
           </div>
         ) : null}

@@ -8,8 +8,7 @@ import { ResumeUpload } from "./components/ResumeUpload";
 import { AnalysisPanel } from "./components/AnalysisPanel";
 import { ResumeEditor } from "./components/ResumeEditor";
 import { analyzeResume, improveResume } from "./services/gemini";
-import { FileText, Sparkles, Wand2, BarChart3, LayoutDashboard } from "lucide-react";
-import { motion, AnimatePresence } from "motion/react";
+import { Wand2, BarChart3 } from "lucide-react";
 
 interface AnalysisResult {
   score: number;
@@ -83,26 +82,20 @@ export default function App() {
           <span className="font-black text-2xl tracking-tighter uppercase">Resume<span className="text-blue-600">Smart</span></span>
           <span className="bg-black text-white text-[10px] px-1.5 py-0.5 font-bold uppercase tracking-widest leading-none">v1.2</span>
         </div>
-        
-        <nav className="hidden md:flex gap-8 text-[11px] font-bold uppercase tracking-widest">
-          <a href="#" className="border-b-2 border-black pb-1">Optimizer</a>
-          <a href="#" className="text-gray-400 hover:text-black transition-colors">Templates</a>
-          <a href="#" className="text-gray-400 hover:text-black transition-colors">History</a>
-        </nav>
       </header>
 
-      <main className="flex flex-col lg:flex-row flex-1 overflow-x-hidden">
+      <main className="flex flex-col lg:flex-row flex-1 overflow-x-hidden relative">
         {/* Left Column: Tools & Analysis (Sidebar style) */}
         <aside className="w-full lg:w-[420px] lg:border-r border-black flex flex-col bg-white shrink-0">
           <div className="p-4 md:p-8 border-b border-black bg-[#f8f8f8] space-y-6">
             <div className="flex items-center justify-between">
-              <label className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500">Target Role</label>
-              <span className="text-[10px] font-mono text-blue-600 font-bold hidden sm:inline">STATUS_ACTIVE</span>
+               <label className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500">Target Role</label>
+               <span className="text-[10px] font-mono text-blue-600 font-bold hidden sm:inline">STATUS_ACTIVE</span>
             </div>
             
             <div className="mt-1">
               <input 
-                type="text"
+                type="text" 
                 placeholder="Enter target role (e.g. AI Engineer)"
                 className="w-full p-4 border-2 border-black bg-white font-bold uppercase text-xs tracking-widest focus:outline-none neo-shadow transition-all appearance-none placeholder:text-gray-300 rounded-none shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] focus:translate-x-[2px] focus:translate-y-[2px] focus:shadow-none"
                 value={targetRole}

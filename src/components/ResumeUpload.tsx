@@ -60,8 +60,8 @@ export function ResumeUpload({ onUpload, onTextPaste, isExtracting, setIsExtract
         <div className="bg-black p-3 rounded-none mb-4 group-hover:bg-blue-600 transition-colors">
           <Upload className="w-6 h-6 text-white" />
         </div>
-        <p className="text-xs font-black uppercase tracking-widest text-black text-center">Upload PDF</p>
-        <p className="text-[10px] font-bold text-gray-400 uppercase tracking-tight text-center">Max 5MB &bull; PDF only</p>
+        <p className="text-[11px] font-black uppercase tracking-widest text-black text-center">Upload Resume PDF</p>
+        <p className="text-[9px] font-bold text-gray-400 uppercase tracking-tight text-center">Max 5MB &bull; PDF only</p>
         <input 
           type="file" 
           ref={fileInputRef} 
@@ -87,8 +87,8 @@ export function ResumeUpload({ onUpload, onTextPaste, isExtracting, setIsExtract
       </div>
 
       <textarea
-        placeholder="Paste plain text payload here..."
-        className="w-full h-24 p-3 border border-black bg-white focus:outline-none neo-shadow transition-all resize-none text-xs font-medium"
+        placeholder="Paste plain text content here..."
+        className="w-full h-24 p-4 border border-black bg-white focus:outline-none shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] focus:shadow-none transition-all resize-none text-xs font-bold font-sans"
         onChange={(e) => onTextPaste(e.target.value)}
       ></textarea>
     </div>
