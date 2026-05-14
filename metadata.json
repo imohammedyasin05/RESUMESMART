@@ -1,6 +1,6 @@
 {
-  "name": "AI Resume Smart Editor",
-  "description": "An AI-powered resume analyzer and editor that provides ATS scoring, improvement suggestions, and role-based optimization.",
+  "name": "ResumeSmart AI",
+  "description": "Professional AI-powered resume optimizer and analyzer for landing your dream job.",
   "requestFramePermissions": [],
   "majorCapabilities": []
 }
