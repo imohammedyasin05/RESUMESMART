@@ -87,6 +87,6 @@ The app uses a layout-shifting strategy:
 - **Desktop**: Side-by-side view (Analysis | Editor) for maximum productivity.
 - **Mobile/Tablet**: Sequential stacked view (Input -> Analysis -> Editor) for focus on smaller screens.
 
----
 
-Built with ❤️ by AI Studio Builder.
+
+
